@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Apresentação</title>
+  </head>
+  <body>
+    <div id="container">
+
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script>
+      var h1 = React.createElement("h1", {style:{ color: 'blue'}, id: "title"}, "Olá mundo!");
+      var h2 = React.createElement("h2", {style:{ color: 'red'}, id: "nome"}, "André Padilha");
+      var h3 = React.createElement("h3", {style:{ color: 'green'}, id: "nome"}, "35 anos");
+
+      var container = React.createElement("div",{},[h1, h2, h3]);
+
+      ReactDOM.render(container, document.getElementById("container"));
+
+    </script>
+  </body>
+</html>
