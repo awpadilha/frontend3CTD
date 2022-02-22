@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Criando Elementos com JSX</title>
+</head>
+<body>
+  <script crossorigin="" src="https://unpkg.com/react@17/umd/react.development.js"></script>
+ <script crossorigin="" src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+ <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+ 
+ 
+ <div id="root"> </div>
+ 
+ <script type="text/babel">
+ 
+ var h2 = React.createElement("h2", {style:{ color: 'black'}, id: "title"}, "Listado");
+ var li = React.createElement("li", { style: { color: 'black' }, id: "opcional" }, "soy");
+ var li2 = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "una");
+ var li3 = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "lista");
+
+ var container = React.createElement("div",{},[ h2, li, li2, li3]);
+
+ 
+  ReactDOM.render(container, document.getElementById("root"));
+ 
+</script>
+
+</body>
