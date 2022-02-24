@@ -15,15 +15,18 @@
  
  <script type="text/babel">
  
- var h2 = React.createElement("h2", {style:{ color: 'black'}, id: "title"}, "Listado");
- var li = React.createElement("li", { style: { color: 'black' }, id: "opcional" }, "soy");
- var li2 = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "una");
- var li3 = React.createElement("li", { style: { color: 'black' }, id: "dados" }, "lista");
-
- var container = React.createElement("div",{},[ h2, li, li2, li3]);
-
  
-  ReactDOM.render(container, document.getElementById("root"));
+  <div>
+    <h2> Listado </h2>
+    <ul>
+      <li key="{1}">soy</li>
+      <li key="{2}">una</li>
+      <li key="{3}">lista</li>
+    </ul>
+  </div>
+
+  ReactDOM.render(div, document.getElementById("root"));
+
  
 </script>
 
